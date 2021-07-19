@@ -55,7 +55,7 @@ I provided the executable file built with **pyinstaller**，Of course, you can a
 
 #### Join us
 
-* > Send your message to my email（ h1657802074@gmail.com ）I'll check every email myself
+* > Send your message to my email（ writeforever@foxmail.com ）I'll check every email myself
   >
   > Your every contribution is a great help to this project
 

@@ -42,7 +42,7 @@ pyinstaller -F main.py -w
 ----
 ----
 ### 通过点击寄存器位按钮，更新底部各进制输入框中的数据，反之亦然。
-> 暂时仅支持修改16进制输入框中的数据更新寄存器位按钮
+> 暂时仅支持修改16进制输入框中的数据更新寄存器位按钮，待输入完成后点击回车刷新
 
 保持更新
 ----
@@ -122,4 +122,4 @@ from tkinter import Tk, Label, Button, Toplevel
   
 
 @[hz2](https://gitee.com/JensenHua/)
-我的个人邮箱（1657802074@qq.com）
+我的个人邮箱（writeforever@foxmail.com）

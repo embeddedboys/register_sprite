@@ -87,7 +87,7 @@ class MyGui(Frame):
                 # 打印错误信息
                 print(self.fontstyle.color_font("ERROR, Unrecognized HEX <{}> From User Input!", 7, 31, 40).format(bit))
 
-            weight-=1
+            weight -= 1
 
         # 获取数据二进制字符串
         dec_data = int(dec_data)

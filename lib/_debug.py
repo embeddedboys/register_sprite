@@ -52,6 +52,12 @@ def timer_stop(self):
     print((g_time_delta * 1000))
 
 
+class log(object):
+
+    def __int__(self):
+        pass
+
+
 class printk(object):
 
     def __init__(self, *args, **kwargs):
@@ -64,7 +70,7 @@ class printk(object):
         def wrapped_function(*args, **kwargs):
             t = get_current_time()
             mutil_time = f"{t[0]}:{t[1]}:{t[2]}"
-            styled_time = self.fontstyle.color_font(mutil_time, 1,33)
+            styled_time = self.fontstyle.color_font(mutil_time, 1, 33)
             if t[2] < 10:
                 sec = '0' + str(t[2])
             else:
@@ -72,7 +78,9 @@ class printk(object):
 
             program_status = self.fontstyle.color_font('OK', 1, 32)
             log_string = func.__code__
-            print(f'[{THREE_SPACE}{styled_time}{TWO_SPACE}] {program_status} ', log_string, self.fontstyle.color_font("DEBUG INFO",4,32))
+
+            debug_info = f'[{THREE_SPACE}{styled_time}{TWO_SPACE}] {program_status} ', log_string, self.fontstyle.color_font("DEBUG INFO", 4, 32)
+            print(f'[{THREE_SPACE}{styled_time}{TWO_SPACE}] {program_status} ', log_string, self.fontstyle.color_font("DEBUG INFO", 4, 32))
             return func(*args, **kwargs)
 
         return wrapped_function
@@ -99,3 +107,6 @@ def _timeit(func):
         return result
 
     return wrapper
+
+if __name__ == '__main__':
+    print(get_current_time())
